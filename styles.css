@@ -14,7 +14,7 @@ html {
    --color-second: #e8e8e8;
    --color-third: #bbbfca;
    --color-fourth: #495464;
-   --font-title: 1.8rem;
+   --font-title: 1.5rem;
    --font-subtitle: 1.4rem;
    --font-text: 1rem;
 }
@@ -38,12 +38,34 @@ header {
    height: 100px;
    background-color: var(--color-fourth);
    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.13);
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 100px;
+   align-items: center;
+   position: fixed;
+   top: 0;
+}
+.logo {
+   font-size: var(--font-title);
+   font-weight: 600;
+   font-style: italic;
+   color: var(--color-first);
+}
+.header--navbar {
+   display: flex;
+   gap: 15px;
+}
+.header--navbar__item {
+   color: var(--color-first);
+   text-decoration: none;
+   font-weight: 300;
+   font-size: 0.8rem;
 }
 /* HEADER */
 
 /* HOME */
 main .home {
-   height: calc(100vh - 100px);
+   justify-content: flex-end;
 }
 .home--presentation {
    display: flex;
